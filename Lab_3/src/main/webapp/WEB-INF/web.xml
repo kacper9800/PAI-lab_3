@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>SerwletSesja</servlet-name>
+        <servlet-class>com.mycompany.lab_3.SerwletSesja</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SerwletMoneta</servlet-name>
+        <servlet-class>com.mycompany.lab_3.SerwletMoneta</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SerwletPierwszy</servlet-name>
+        <servlet-class>com.mycompany.lab_3.pai.servlets.SerwletPierwszy</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SerwletDrugi</servlet-name>
+        <servlet-class>com.mycompany.lab_3.pai.servlets.SerwletDrugi</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SerwletSesja</servlet-name>
+        <url-pattern>/SerwletSesja</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SerwletMoneta</servlet-name>
+        <url-pattern>/SerwletMoneta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SerwletPierwszy</servlet-name>
+        <url-pattern>/SerwletPierwszy</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SerwletDrugi</servlet-name>
+        <url-pattern>/SerwletDrugi</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
